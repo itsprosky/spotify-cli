@@ -1,20 +1,24 @@
-# spotify-cli
+## spotify-cli
 
-`spotify-cli` is a Python script for downloading Spotify tracks as MP3 files via YouTube.  
-Currently, only individual track downloads are supported (no playlists or albums yet).  
+`spotify-cli` — это скрипт Python для загрузки треков Spotify в формате MP3 через YouTube.
 
-It performs the following steps:  
-1. Parses a Spotify track link to extract information: track title, artist, album, release year.  
-2. Uses [`ytmusicapi`](https://github.com/sigma67/ytmusicapi) to search for the track on YouTube Music.  
-3. Downloads the track with [`yt-dlp`](https://github.com/yt-dlp/yt-dlp) and converts it to MP3.  
-4. Uses `ffmpeg` for conversion, which must be placed in a folder named `ffmpeg` next to the script.
+В настоящее время поддерживается загрузка только отдельных треков (плейлистов и альбомов пока нет).
+
+Он выполняет следующие действия:
+
+1. Анализирует ссылку на трек Spotify для извлечения информации: название трека, исполнитель, альбом, год выпуска.
+
+2. Использует [`ytmusicapi`](https://github.com/sigma67/ytmusicapi) для поиска трека в YouTube Music.
+
+3. Скачивает трек с помощью [`yt-dlp`](https://github.com/yt-dlp/yt-dlp) и конвертирует его в MP3.
+
+4. Использует `ffmpeg` для конвертации
 
 ---
-
-## Requirements
-
-- Python 3.8+  
-- Windows OS
-- Python modules (can be installed via pip):
+# Installation
+Для работы необходимо установить и поместить папку [`ffmpeg`][(https://github.com/yt-dlp/yt-dlp](https://www.ffmpeg.org/download.html) рядом со скриптом.
+Также необходимо установить модули
 ```bash
 pip install colorama requests beautifulsoup4 ytmusicapi yt-dlp
+
+Пока скрипт орриентировать только под Windows.
