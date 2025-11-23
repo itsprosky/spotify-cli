@@ -14,6 +14,7 @@ It performs the following actions:
 
 4. Uses ffmpeg for conversion
 
+!(preview.png)
 ---
 ## Installation
 To use this script, you need to install [`ffmpeg`](https://www.ffmpeg.org/download.html) and place the folder next to the script.
