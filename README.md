@@ -1,24 +1,24 @@
 ## spotify-cli
 
-`spotify-cli` — это скрипт Python для загрузки треков Spotify в формате MP3 через YouTube.
+`spotify-cli` is a Python script for downloading Spotify tracks in MP3 format from YouTube.
 
-В настоящее время поддерживается загрузка только отдельных треков (плейлистов и альбомов пока нет).
+Currently, only individual tracks are supported (playlists and albums are not supported yet).
 
-Он выполняет следующие действия:
+It performs the following actions:
 
-1. Анализирует ссылку на трек Spotify для извлечения информации: название трека, исполнитель, альбом, год выпуска.
+1. Parses the Spotify track URL to extract information: track title, artist, album, and release year.
 
-2. Использует [`ytmusicapi`](https://github.com/sigma67/ytmusicapi) для поиска трека в YouTube Music.
+2. Uses [`ytmusicapi`](https://github.com/sigma67/ytmusicapi) to search for the track on YouTube Music.
 
-3. Скачивает трек с помощью [`yt-dlp`](https://github.com/yt-dlp/yt-dlp) и конвертирует его в MP3.
+3. Downloads the track using [`yt-dlp`](https://github.com/yt-dlp/yt-dlp) and converts it to MP3.
 
-4. Использует `ffmpeg` для конвертации
+4. Uses ffmpeg for conversion
 
 ---
 # Installation
-Для работы необходимо установить и поместить папку [`ffmpeg`][(https://github.com/yt-dlp/yt-dlp](https://www.ffmpeg.org/download.html) рядом со скриптом.
-Также необходимо установить модули
+To use this script, you need to install [`ffmpeg`][(https://github.com/yt-dlp/yt-dlp](https://www.ffmpeg.org/download.html) and place the [`ffmpeg`][(https://github.com/yt-dlp/yt-dlp](https://www.ffmpeg.org/download.html) folder next to the script.
+You also need to install the following modules:
 ```bash
 pip install colorama requests beautifulsoup4 ytmusicapi yt-dlp
-
-Пока скрипт орриентировать только под Windows.
+```
+For now, the script is only designed for Windows.
