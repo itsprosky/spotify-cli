@@ -16,7 +16,7 @@ It performs the following actions:
 
 ---
 ## Installation
-To use this script, you need to install [`ffmpeg`](https://github.com/yt-dlp/yt-dlp) and place the folder next to the script.
+To use this script, you need to install [`ffmpeg`]([https://github.com/yt-dlp/yt-dlp](https://www.ffmpeg.org/download.html)) and place the folder next to the script.
 You also need to install the following modules:
 ```bash
 pip install colorama requests beautifulsoup4 ytmusicapi yt-dlp
