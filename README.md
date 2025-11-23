@@ -21,4 +21,4 @@ You also need to install the following modules:
 ```bash
 pip install colorama requests beautifulsoup4 ytmusicapi yt-dlp
 ```
-For now, the script is only designed for Windows.=
+For now, the script is only designed for Windows.
